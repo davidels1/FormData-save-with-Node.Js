@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Form Submit Node.Js</title>
+  </head>
+  <body>
+    <h1>Form submition using Node.Js and Express!</h1>
+    <p>All the data on this form will be saved on a JSON file.</p>
+    <hr>
+    <br>
+    <form id="myForm">
+      <label for="firstName">First Name: </label>
+      <input type="text" id="firstName" name="fName" required />
+      <span id="error-FirstName" class="ErrorSpan"></span>
+      <br>
+      <label for="lastName">Last Name: </label>
+      <input type="text" id="lastName" name="lName" required />
+      <span id="error-lastName" class="ErrorSpan"></span>
+      <br>
+      <label for="email">E-mail: </label>
+      <input type="email" id="mail" name="mail" required />
+      <span id="error-email" class="ErrorSpan"></span>
+      <br>
+      <label for="pswd">Password: </label>
+      <input type="password" id="pswd" name="pswd" required />
+      <span id="error-pswd" class="ErrorSpan"></span>
+      <br>
+      <button  onclick="validate(event)">Submit</button>
+    </form>
+    <script type="text/javascript" src="submit.js"></script>
+  </body>
+</html>
